@@ -1,3 +1,12 @@
+<?php
+// check if user is already logged in, if logged in there is no need to show login screen
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+	if(isset($_SESSION['loggedin']) == true){
+		die(header("Location: ../pagetoredirectto")); // page to redirect to if user is already logged in
+	}
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>

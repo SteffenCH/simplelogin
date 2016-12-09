@@ -16,7 +16,7 @@
 	<section>
 		<div>
 			<h1>Register</h1>
-			<form action="createaccount.php" method="post">
+			<form action="backend/createaccount.php" method="post">
 				<div class="row">
 					<div class="col xs-12">
 						<label for="user_name">username</label>
